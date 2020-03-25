@@ -1,0 +1,158 @@
+
+<!-- saved from url=(0050)https://plantform.cdn.bcebos.com/daili/baiwan.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>.
+
+
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+       
+    <link rel="shortcut icon" href="https://plantform.cdn.bcebos.com/static/favicon.ico">
+    <title>月入百万</title>
+
+    <style>
+
+        .main-center-m1 {
+            text-align: center;
+            width:100%;
+            margin: 0 auto;
+            position: fixed;
+            bottom: 0.1%;
+            top: 0;
+             overflow-y:scroll;
+  
+   		 overflow-x:hidden;
+        }
+      	.main-center-m1 p{
+      		font-size: 180%;
+
+      	}
+      	.main-center-m1 img{
+      		width: 100%;
+      	}
+      	.submit {
+		    border: 1px #3083ff solid;
+		    border-radius: 4px;
+		    background-color: #3487ff;
+		    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+		    color: #fff;
+		    text-align: center;
+		    font-weight: lighter;
+		    background-image: linear-gradient(0deg,#398bff,#3083ff);
+		    width: 80%;
+		    height: 60px;
+		    margin: 40px 0 8px;
+		    font-size: 26px;
+		}
+		.backgroundLayer{
+			 text-align: center;
+            width:100%;
+            margin: 0 auto;
+            position: fixed;
+           z-index: 100;
+            top: 20%;
+		}
+		.backgroundLayer p{
+			font-size: 180%;
+			margin: 2%;
+		}
+    </style>
+
+
+
+
+
+<div class="main-center-m1">
+    
+    
+    <p>全球首款 亚洲最强</p>
+    <p> 一次合作 永久分成 </p>
+    <p >月入百万</p>
+
+    <p>..</p>
+    <img src="./baiwan_files/info.jpg">
+     <p>..</p>
+
+
+    <input id="get_acc" type="submit" class="submit" value="月入百万" tabindex="8">
+        <p></p>
+        <p></p>
+
+	<!-- <p>你的手机号是唯一的提款凭证 请确保输入正确</p> -->
+	<!--  <a href="https://plantform.cdn.bcebos.com/daili%2F%E6%8B%9B%E5%95%86%E6%89%8B%E5%86%8C_%E4%B8%87%E5%88%A9.pdf" download="CSDN">下载</a> -->
+
+    </div>
+    <!-- 在这里注册消息内容。在这里注册消息内容 android -->
+    <!-- android -->
+
+
+<div class="backgroundLayer" style="display: none;">
+	<p id="user1">账号:wanli80</p>
+	<p id="password">密码:KEYourew8743</p>
+	<a>请截屏保存此页面防止账号密码丢失</a>
+	<br><br>
+	<a>进入后台请绑定手机号 修改默认密码</a>
+	<br>
+	<a href="https://qm.wan370.com/login.html">后台地址 https://qm.wan370.com/login.html</a>
+	<br><br>
+	<br>
+
+</div>
+
+<script src="./baiwan_files/jquery.min.js.下载"></script>
+<script src="./baiwan_files/jquery.cookie.min.js.下载"></script>
+
+<script type="text/javascript">
+	// $(".main-center-m1").hide();
+	$('.backgroundLayer').hide();
+
+	$('#get_acc').click(function(){
+		
+
+		var str='wanli882,KEY7c2e4f2b#wanli885,KEY38fb9c31#wanli886,KEYcd400b33#wanli889,KEY8a0d5839';
+		var str2='wanli890,KEY47eee265#wanli891,KEYdc335167#wanli892,KEY7077c069#wanli893,KEY4bc2f6b8#wanli895,KEY2d450d6f#wanli896,KEYc1897c71#wanli897,KEY55cdeb73#wanli898,KEYea125a75';
+		var str3='wanli8100,KEYf2e3aac9#wanli8101,KEYe72d1be9#wanli8102,KEYdb768d09#wanli8103,KEYcfbffe29#wanli8105,KEYb852e069#wanli8106,KEYac9c5189#wanli8107,KEYa0e5c2a9#wanli8108,KEY952f33c9#wanli8109,KEY8978a4e9';
+
+
+		str=str+"#"+str2+'#'+str3;
+		
+		var infoArray = str.split('#');
+		
+		var userpassword = infoArray[new Date().getTime()%infoArray.length].split(',');
+
+
+		$(".main-center-m1").hide();
+		$('.backgroundLayer').show();
+
+		
+		
+		var user = $.cookie('user');
+		var password=$.cookie('password');
+		if(user==undefined||password==undefined){
+
+			user= userpassword[0];
+			password=userpassword[1];
+
+			$.cookie('user', user, { expires: 1 });
+			$.cookie('password', password, { expires: 1 });
+		}
+
+
+		console.log('user:'+user);
+		console.log('password:'+password);
+
+		document.querySelector('#user1').textContent='账号:'+user;
+		document.querySelector('#password').textContent='密码:'+password;
+
+		
+		setTimeout(function(){
+			// window.location.href='https://plantform.cdn.bcebos.com/daili%2F%E6%8B%9B%E5%95%86%E6%89%8B%E5%86%8C_%E4%B8%87%E5%88%A9.pdf?1';
+		},1000);
+	});
+
+
+
+</script>
+
+
+
+</body></html>
